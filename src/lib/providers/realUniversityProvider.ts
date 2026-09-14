@@ -276,10 +276,12 @@ export class RealRegistrationProvider implements UniversityRegistrationProvider 
     section.occupied += 1;
     section.available -= 1;
 
+    // Mutate student enrollment
     // Mutate student enrollment (strictly once, guaranteed deduplication)
     if (!student.currentEnrollments.includes(course.code)) {
       student.currentEnrollments.push(course.code);
     }
+    student.currentEnrollments.push(course.code);
     student.currentEnrollments = Array.from(new Set(student.currentEnrollments));
     student.completedCredits += course.credits;
     if (course.type === "Core") {

@@ -37,6 +37,7 @@ export async function POST(req: NextRequest) {
     section.occupied += 1;
     section.available -= 1;
 
+    // Mutate student enrollment in SIS
     // Mutate student enrollment in SIS (strictly unique)
     if (!student.currentEnrollments.includes(course.code)) {
       student.currentEnrollments.push(course.code);

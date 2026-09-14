@@ -398,6 +398,7 @@ export default function Home() {
   };
 
   const handleRegisterIntent = (course: Course) => {
+    // Single enrollment check: If already enrolled, open learning hub directly
     // Single enrollment check: If already enrolled, lock registration and open learning hub directly
     if (student?.currentEnrollments?.includes(course.code)) {
       alert(`Registration Locked: You are already enrolled in ${course.code} (${course.name}). Multiple registrations for the same individual are strictly locked. Opening your lifelong Learning Hub...`);
@@ -406,6 +407,7 @@ export default function Home() {
     }
 
     if (student?.completedCourses?.includes(course.code)) {
+      alert(`You have already completed ${course.code} (${course.name}). Retaking completed courses is not permitted.`);
       alert(`Registration Locked: You have already completed ${course.code} (${course.name}). Retaking completed courses is locked under university policy.`);
       return;
     }
@@ -645,8 +647,11 @@ export default function Home() {
                   <RecommendedCourses
                     courses={courses}
                     plannedCourseCodes={plannedCourses}
+                    enrolledCourseCodes={student?.currentEnrollments || []}
+                    completedCourseCodes={student?.completedCourses || []}
                     onViewDetails={(c) => setSelectedCourseForModal(c)}
                     onAddToPlan={(c) => handleAddToPlan(c)}
+                    onStartLearning={(c) => setLearningModalCourse(c.code)}
                     onViewAll={() => setActiveTab("course-catalog")}
                   />
                 </>
@@ -675,7 +680,8 @@ export default function Home() {
                 <CourseCatalogView
                   courses={courses}
                   plannedCourseCodes={plannedCourses}
-                  enrolledCourseCodes={[...(student?.currentEnrollments || []), ...(student?.completedCourses || [])]}
+                  enrolledCourseCodes={student?.currentEnrollments || []}
+                  completedCourseCodes={student?.completedCourses || []}
                   onViewCourse={(c) => setSelectedCourseForModal(c)}
                   onAddToPlan={(c) => handleAddToPlan(c)}
                   onRegisterIntent={(c) => handleRegisterIntent(c)}
@@ -684,12 +690,18 @@ export default function Home() {
               ) : activeTab === "eligibility" ? (
                 <EligibilityView
                   courses={courses}
+                  enrolledCourseCodes={student?.currentEnrollments || []}
+                  completedCourseCodes={student?.completedCourses || []}
                   onRegisterIntent={(c) => handleRegisterIntent(c)}
+                  onStartLearning={(c) => setLearningModalCourse(c.code)}
                 />
               ) : activeTab === "prerequisites" ? (
                 <PrerequisitesView
                   onViewCourse={(c) => setSelectedCourseForModal(c)}
                   onRegisterIntent={(c) => handleRegisterIntent(c)}
+                  enrolledCourseCodes={student?.currentEnrollments || []}
+                  completedCourseCodes={student?.completedCourses || []}
+                  onStartLearning={(code) => setLearningModalCourse(code)}
                 />
               ) : activeTab === "timetable" ? (
                 <TimetableView slots={timetableSlots} />
@@ -766,6 +778,10 @@ export default function Home() {
           onClose={() => setSelectedCourseForModal(null)}
           isEnrolled={student?.currentEnrollments?.includes(selectedCourseForModal.code)}
           isCompleted={student?.completedCourses?.includes(selectedCourseForModal.code)}
+          onStartLearning={(c) => {
+            setSelectedCourseForModal(null);
+            setLearningModalCourse(c.code);
+          }}
           onRegisterIntent={(c) => {
             setSelectedCourseForModal(null);
             handleRegisterIntent(c);
@@ -786,6 +802,12 @@ export default function Home() {
           schedule={confirmModalData.schedule}
           seatsAvailable={confirmModalData.seatsAvailable}
           eligibilitySummary={confirmModalData.eligibilitySummary}
+          isEnrolled={student?.currentEnrollments?.includes(confirmModalData.courseCode)}
+          isCompleted={student?.completedCourses?.includes(confirmModalData.courseCode)}
+          onStartLearning={(code) => {
+            setConfirmModalData(null);
+            setLearningModalCourse(code);
+          }}
           onCancel={() => setConfirmModalData(null)}
           onSuccess={handleRegistrationSuccess}
         />

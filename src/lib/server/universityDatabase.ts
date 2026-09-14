@@ -1161,6 +1161,7 @@ class UniversityDatabase {
   }
 
   public listStudents(): Student[] {
+    return Array.from(this.students.values());
     return Array.from(this.students.values()).map(s => {
       s.currentEnrollments = Array.from(new Set(s.currentEnrollments || []));
       return s;
@@ -1779,6 +1780,10 @@ class UniversityDatabase {
 
 }
 
-// Global server singleton
-const globalUnivDb = new UniversityDatabase();
-export { globalUnivDb };
+// Global server singleton attached to globalThis for full cross-route state persistence
+const globalForUnivDb = globalThis as unknown as {
+  univDbInstance: UniversityDatabase | undefined;
+};
+
+export const globalUnivDb = globalForUnivDb.univDbInstance ?? new UniversityDatabase();
+globalForUnivDb.univDbInstance = globalUnivDb;

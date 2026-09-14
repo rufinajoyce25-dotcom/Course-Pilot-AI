@@ -162,48 +162,48 @@ export const EligibilityView: React.FC<EligibilityViewProps> = ({
               ) : null}
             </div>
 
-          {/* AI Explanation */}
-          <div className="p-4 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0]">
-            <h4 className="text-[13px] font-bold text-[#0c142c] mb-1 flex items-center gap-1.5">
-              <Sparkles className="w-4 h-4 text-indigo-600" />
-              <span>Academic Advisor Rationale</span>
-            </h4>
-            <p className="text-[13px] text-[#475569] leading-relaxed">{auditResult.summary}</p>
-          </div>
+            {/* AI Explanation */}
+            <div className="p-4 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0]">
+              <h4 className="text-[13px] font-bold text-[#0c142c] mb-1 flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4 text-indigo-600" />
+                <span>Academic Advisor Rationale</span>
+              </h4>
+              <p className="text-[13px] text-[#475569] leading-relaxed">{auditResult.summary}</p>
+            </div>
 
-          {/* Rule-by-rule Checklist */}
-          <div>
-            <h4 className="text-[13px] font-bold uppercase tracking-wider text-[#64748b] mb-3">
-              Rule Verification Breakdown
-            </h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {(auditResult.checks || []).map((rule, idx) => (
-                <div
-                  key={idx}
-                  className="p-3.5 rounded-2xl border border-[#eef2f8] bg-white flex items-start gap-3"
-                >
+            {/* Rule-by-rule Checklist */}
+            <div>
+              <h4 className="text-[13px] font-bold uppercase tracking-wider text-[#64748b] mb-3">
+                Rule Verification Breakdown
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {(auditResult.checks || []).map((rule, idx) => (
                   <div
-                    className={`w-5 h-5 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0 ${
-                      rule.passed ? "bg-emerald-500 text-white" : "bg-rose-500 text-white"
-                    }`}
+                    key={idx}
+                    className="p-3.5 rounded-2xl border border-[#eef2f8] bg-white flex items-start gap-3"
                   >
-                    {rule.passed ? (
-                      <Check className="w-3 h-3 stroke-[3]" />
-                    ) : (
-                      <X className="w-3 h-3 stroke-[3]" />
-                    )}
+                    <div
+                      className={`w-5 h-5 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0 ${
+                        rule.passed ? "bg-emerald-500 text-white" : "bg-rose-500 text-white"
+                      }`}
+                    >
+                      {rule.passed ? (
+                        <Check className="w-3 h-3 stroke-[3]" />
+                      ) : (
+                        <X className="w-3 h-3 stroke-[3]" />
+                      )}
+                    </div>
+                    <div>
+                      <span className="text-[13px] font-bold text-[#0c142c] block">
+                        {rule.ruleName}
+                      </span>
+                      <p className="text-[12px] text-[#64748b] mt-0.5">{rule.explanation}</p>
+                    </div>
                   </div>
-                  <div>
-                    <span className="text-[13px] font-bold text-[#0c142c] block">
-                      {rule.ruleName}
-                    </span>
-                    <p className="text-[12px] text-[#64748b] mt-0.5">{rule.explanation}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-        </div>
         );
       })()}
     </div>

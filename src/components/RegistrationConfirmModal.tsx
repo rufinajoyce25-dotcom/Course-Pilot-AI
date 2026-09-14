@@ -69,7 +69,6 @@ export const RegistrationConfirmModal: React.FC<RegistrationConfirmModalProps> =
         throw new Error(data.error || "Registration failed");
       }
 
-      setConfirmedResult(data);
       const enrichedResult = {
         ...data,
         courseCode: data.courseCode || courseCode,
@@ -89,7 +88,6 @@ export const RegistrationConfirmModal: React.FC<RegistrationConfirmModalProps> =
         });
       } catch (e) {}
 
-      onSuccess(data);
       onSuccess(enrichedResult);
     } catch (err: any) {
       alert(`Registration error: ${err.message}`);

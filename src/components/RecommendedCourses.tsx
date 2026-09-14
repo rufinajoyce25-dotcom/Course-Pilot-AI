@@ -107,6 +107,11 @@ export const RecommendedCourses: React.FC<RecommendedCoursesProps> = ({
                     <Icon className="w-6 h-6" />
                   </div>
                   <div className="flex items-center gap-1.5">
+                    <span
+                      className={`px-2.5 py-1 rounded-full text-[11px] font-semibold border ${styling.badgeBg}`}
+                    >
+                      {course.matchBadge || "Recommended"}
+                    </span>
                     {isEnrolled ? (
                       <span className="px-2.5 py-1 rounded-full text-[11px] font-bold border bg-amber-50 text-amber-800 border-amber-200 flex items-center gap-1">
                         <Lock className="w-3 h-3 text-amber-600" />

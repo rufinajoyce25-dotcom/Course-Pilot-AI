@@ -223,9 +223,15 @@ export const PrerequisitesView: React.FC<PrerequisitesViewProps> = ({
                   sections: [],
                   type: "Core",
                   semester: "Fall 2026",
-                  level: currentNode.level * 100,
+                  level: (currentNode.level * 100 as 100 | 200 | 300 | 400 | 500),
                   description: `${currentNode.name} curriculum module.`,
-                  instructor: "Faculty Registrar"
+                  instructor: "Faculty Registrar",
+                  department: "Computer Science",
+                  dataSource: {
+                    source: "University Registrar SIS",
+                    timestamp: new Date().toISOString(),
+                    status: "LIVE"
+                  }
                 });
               }}
               className="px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-[13px] shadow-sm transition-all flex-shrink-0 cursor-pointer"
