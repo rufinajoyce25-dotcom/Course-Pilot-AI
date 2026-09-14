@@ -1,0 +1,19 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/agent/route": "app/api/agent/route.js",
+  "/api/v1/courses/[id]/route": "app/api/v1/courses/[id]/route.js",
+  "/api/courses/route": "app/api/courses/route.js",
+  "/api/student/route": "app/api/student/route.js",
+  "/api/registration/route": "app/api/registration/route.js",
+  "/api/v1/courses/[id]/seats/route": "app/api/v1/courses/[id]/seats/route.js",
+  "/api/v1/courses/route": "app/api/v1/courses/route.js",
+  "/api/v1/learning/route": "app/api/v1/learning/route.js",
+  "/api/v1/registration/register/route": "app/api/v1/registration/register/route.js",
+  "/api/v1/students/route": "app/api/v1/students/route.js",
+  "/api/v1/registration/status/[studentId]/route": "app/api/v1/registration/status/[studentId]/route.js",
+  "/api/v1/rules/eligibility/route": "app/api/v1/rules/eligibility/route.js",
+  "/api/v1/students/[id]/route": "app/api/v1/students/[id]/route.js",
+  "/page": "app/page.js",
+  "/api/v1/timetable/[studentId]/route": "app/api/v1/timetable/[studentId]/route.js",
+  "/api/agent/events/route": "app/api/agent/events/route.js"
+}
