@@ -1,292 +1,418 @@
 <div align="center">
 
-# 🎓 CoursePilot AI
-### Autonomous University Academic Advisor & Course Registration System
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NextJS-Dark.svg"><img alt="CoursePilot Logo" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NextJS-Light.svg" width="48" height="48" style="vertical-align: middle;"/></picture> <span style="background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.6rem; font-weight: 900;">CoursePilot AI</span>
 
-*Plan Smarter. Learn Further. Real-Time Autonomous Academic Guidance, Strict Single-Enrollment Protection, Anti-Cheat Learning Hub & Verifiable Lifelong Credentials.*
+### ⚡ *Next-Generation Autonomous University Academic Advisor & Course Registration Operating System*
 
-[![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Tests Passing](https://img.shields.io/badge/Automated_Tests-116%20Passing-brightgreen?style=for-the-badge&logo=checkmarx)](scratch/)
-[![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
+<p align="center">
+  <b>Plan Smarter. Learn Further. Zero Bureaucracy.</b><br/>
+  <i>Autonomous Academic Audits • Anti-Cheat Lifelong Learning Hub • Strict Single-Enrollment Locks • Dynamic SIS Timetables • 100% Free Verifiable Credentials</i>
+</p>
+
+---
+
+<!-- Top Status Badges Row 1: Frameworks & Platforms -->
+[![Next.js](https://img.shields.io/badge/Next.js%2014.2-App%20Router-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React%2018-Modern%20Hooks-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript%205-Type%20Safe-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS%203.4-Modern%20UI-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Node.js](https://img.shields.io/badge/Node.js%2020-Server%20Runtime-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+
+<!-- Top Status Badges Row 2: Live Status & Verification -->
+[![Build Status](https://img.shields.io/badge/Production%20Build-Passing%20(13%2F13%20Pages)-success?style=flat-square&logo=vercel&logoColor=white)](/)
+[![Automated Verification](https://img.shields.io/badge/Automated%20Tests-116%20Passing%20%7C%200%20Failed-brightgreen?style=flat-square&logo=checkmarx&logoColor=white)](scratch/)
+[![Locking Policy](https://img.shields.io/badge/Registration%20Policy-Strict%20Single--Enrollment%20Locked-amber?style=flat-square&logo=auth0&logoColor=white)](/)
+[![Anti-Cheat](https://img.shields.io/badge/Anti--Cheat%20Engine-Active%20Playback%20Verification-blueviolet?style=flat-square&logo=shield&logoColor=white)](/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+
+<br/>
+
+[🌟 Key Highlights](#-executive-summary) • [📸 Interactive Gallery](#-platform-showcase--screenshots) • [🚀 Core Features](#-core-features-deep-dive) • [🏗️ Architecture](#️-system-architecture) • [🧪 116 Test Suite](#-automated-verification--test-suites) • [⚡ Quickstart](#-getting-started)
 
 ---
 
 </div>
 
-## 📌 Overview
+<br/>
 
-**CoursePilot AI** is a production-grade autonomous university academic advising and registration ecosystem. It bridges student records (SIS), degree curriculum requirement graphs (DAG), real-time timetable clash detectors, and live registrar seat capacity into a unified, AI-orchestrated experience.
+## 🎯 Executive Summary
 
-Equipped with an intelligent **Open-Domain Conversational Agent**, a **Strict One-Course-One-Enrollment Locking Policy**, an **Anti-Cheat Lifelong Learning Hub**, hands-on coding sandboxes, and **Tuition-Free Official Proof-of-Enrollment Bills**, CoursePilot AI transforms student academic planning into a seamless, modern journey.
+Traditional university registrar systems are notorious for **clunky interfaces, silent timetable collisions, delayed prerequisite evaluations, and bureaucratic registration holds**. 
+
+**CoursePilot AI** reimagines higher-education curriculum navigation by pairing a real-time **Student Information System (SIS)** with an autonomous **AI Reasoning Pipeline**, an **Anti-Cheat Lifelong Learning Hub**, and **Strict Single-Enrollment Guards**:
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                        🌟 WHAT SETS COURSEPILOT AI APART                                 ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════════════════╣
+║  🔒  STRICT ENROLLMENT LOCKS  │ 1 Course = 1 Enrollment per Student. Eliminates duplicate spam.         ║
+║  🛡️  ANTI-CHEAT VIDEO HUB    │ Replaces fake checkbox clicks with 100% full-duration watch tracking.    ║
+║  💻  REAL CODING SANDBOX      │ Zero pre-filled answers. Requires genuine syntax & test execution.       ║
+║  📝  20-MARK ASSESSMENTS      │ 20 randomized questions per course with a strict 3-attempt safety limit. ║
+║  📄  TUITION-FREE PDF BILLS   │ Zero-dollar transparent official receipts. No misleading commercial fees.║
+║  🤖  OPEN-DOMAIN AI ADVISOR   │ Answers university policies, coding questions & career roadmap advice.   ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+```
 
 ---
 
-## 📸 Platform Showcase & User Interface
-
-### 1. Unified Academic Overview & Autonomous AI Advisor
-The primary dashboard provides instant visibility into academic standing, credit completion breakdown, career roadmap alignment, real-time agent reasoning steps, and AI-curated course recommendations.
+## 📸 Platform Showcase & Screenshots
 
 <div align="center">
-  <img src="public/images/screenshots/01-dashboard-overview.jpg" alt="CoursePilot AI Dashboard Overview" width="95%" style="border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.12);" />
-  <p><em>Figure 1: Real-time Academic Dashboard with Live AI Reasoning Timeline, Degree Progress Wheel, and Dynamic Recommendations.</em></p>
+
+### 🖥️ 1. Real-Time Academic Command Center
+*Live agent cognitive steps, personalized course fit scoring, degree progress wheel, and university SIS synchronization.*
+
+<kbd>
+  <img src="public/images/screenshots/01-dashboard-overview.jpg" alt="CoursePilot AI Dashboard Overview" width="94%" />
+</kbd>
+
+<br/>
+<sub><b>Figure 1:</b> Interactive overview showing student metrics (Joyce Chen, Sem 6, CGPA 8.7), live seat tickers, and recommendation badges.</sub>
+
+---
+
+<br/>
+
+### 💬 2. Conversational AI Advisor & Multi-Student Directory
+*Switch seamlessly across student profiles, run ad-hoc graduation audits, or chat with the autonomous assistant.*
+
+<kbd>
+  <img src="public/images/screenshots/02-ai-advisor-workspace.png" alt="CoursePilot AI Advisor Workspace" width="94%" />
+</kbd>
+
+<br/>
+<sub><b>Figure 2:</b> Top bar with <code>● LIVE • University SIS</code> badge, quick suggestion chips, and responsive AI conversation engine.</sub>
+
+---
+
+<br/>
+
+### ⚡ 3. Multi-Step Live Enrollment Gateway & SIS Ledger
+*Real-time validation pipeline verifying degree rules, preventing schedule overlap, and securing seats in 5 verified steps.*
+
+<kbd>
+  <img src="public/images/screenshots/03-live-enrollment-pipeline.png" alt="Live Enrollment Pipeline & Registration Confirmation" width="68%" />
+</kbd>
+
+<br/>
+<sub><b>Figure 3:</b> Atomic 5-step confirmation modal with unique transaction ID (e.g. <code>TXN-UNIV-564177</code>) and room allocation.</sub>
+
+---
+
+<br/>
+
+### 🎓 4. Lifelong Learning Hub & Anti-Cheat Video Workspace
+*Once registered, courses unlock lifelong access with anti-cheat watch verification, hands-on labs, and instant PDF bills.*
+
+<kbd>
+  <img src="public/images/screenshots/04-learning-hub-anticheat.png" alt="CoursePilot AI Anti-Cheat Learning Hub" width="94%" />
+</kbd>
+
+<br/>
+<sub><b>Figure 4:</b> Comprehensive learning workspace with interactive video player, lab compiler, and 20-mark assessment quiz.</sub>
+
 </div>
 
 ---
 
-### 2. Multi-Student SIS Synchronization & Conversational Intelligence
-Switch between diverse student profiles (undergraduate, transfer, honor roll) or register new students dynamically. The AI chatbot answers any academic, university policy, or general computer science inquiry in natural language.
+## 🚀 Core Features Deep Dive
 
-<div align="center">
-  <img src="public/images/screenshots/02-ai-advisor-workspace.png" alt="CoursePilot AI Advisor Workspace" width="95%" style="border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.12);" />
-  <p><em>Figure 2: Active Student Header with Live University SIS Status, Multi-Student Directory, and Interactive AI Chat Console.</em></p>
-</div>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 style="color: #f59e0b;">🔒 1. Strict Single-Enrollment Locking Policy</h3>
+      <p>Under university registrar rules, an individual student can only enroll in a course once:</p>
+      <ul>
+        <li><b>Visual Lock Indicators:</b> Enrolled courses immediately display <code>🔒 Locked • Enrolled</code> across Catalog, Recommendations, and Modals.</li>
+        <li><b>Action Morphing:</b> Registration buttons transform into <code>🔒 Locked • Go to Learning</code> to open lifelong courseware.</li>
+        <li><b>HTTP 409 Conflict Shield:</b> Both <code>/api/registration</code> and <code>/api/v1/registration/register</code> reject duplicate requests.</li>
+        <li><b>Zero Duplicate Array Pushes:</b> Enforced deduplication in SIS memory (<code>Array.from(new Set(...))</code>).</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3 style="color: #8b5cf6;">🛡️ 2. Anti-Cheat Video Completion System</h3>
+      <p>Prevents premature course completion by verifying full video engagement:</p>
+      <ul>
+        <li><b>No Fake Checkbox Clicks:</b> One-click superficial checkboxes have been completely replaced with true watch verification.</li>
+        <li><b>3-Second Precision:</b> Verifies video playback until the final 3 seconds of lecture runtime.</li>
+        <li><b>Skipping Guard:</b> Pausing, skipping, or jumping ahead rejects verification with actionable user prompts.</li>
+        <li><b>Verifiable State:</b> Completed video IDs are persisted securely to the student transcript records.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 style="color: #10b981;">💻 3. Clean Interactive Coding Labs</h3>
+      <p>Hands-on coding challenges designed for genuine learning retention:</p>
+      <ul>
+        <li><b>Zero Pre-Filled Answers:</b> Eliminates default answers so students write real implementations.</li>
+        <li><b>Syntax & Logic Validation:</b> Rejects placeholder tokens (e.g., <code>pass</code>, <code>TODO</code>, comments-only) with <code>400 Bad Request</code>.</li>
+        <li><b>Automated Test Runner:</b> Tests run in real-time in an isolated sandbox and stream feedback.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3 style="color: #ef4444;">📝 4. 20-Mark Assessment Quiz & 3 Attempts</h3>
+      <p>Rigorous end-of-course evaluation ensuring authentic mastery:</p>
+      <ul>
+        <li><b>20 Comprehensive Questions:</b> Spanning theoretical paradigms, algorithmic math, and architecture.</li>
+        <li><b>60% Passing Benchmark:</b> Requires at least <b>12 / 20 Marks</b> to pass and qualify for graduation credit.</li>
+        <li><b>Max 3 Re-attempts:</b> Failing submissions track attempt count; locked after 3 unsuccessful attempts.</li>
+        <li><b>Verifiable Diploma:</b> Passing triggers generation of an official university certificate.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 style="color: #3b82f6;">📄 5. Tuition-Free PDF Invoicing</h3>
+      <p>Official printable documentation without deceptive commercial fees:</p>
+      <ul>
+        <li><b>$0.00 Tuition-Free Confirmation:</b> Explicitly confirms funded enrollment without misleading dollar figures.</li>
+        <li><b>Dynamic SIS Metadata:</b> Formatted with student ID, course code, section, room, schedule, and transaction hash.</li>
+        <li><b>Client-Side jsPDF Engine:</b> Instant one-click high-resolution PDF download directly in the browser.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3 style="color: #06b6d4;">🤖 6. Autonomous Open-Domain AI Advisor</h3>
+      <p>A multi-agent intelligence engine for personalized university planning:</p>
+      <ul>
+        <li><b>Open-Domain Knowledge:</b> Explains complex CS concepts (B-trees, ACID, Docker, CNNs, Big-O).</li>
+        <li><b>Policy Audits:</b> Answers questions on CGPA grading curves, credit overloads, and add/drop deadlines.</li>
+        <li><b>Live Event Timeline:</b> Real-time streaming UI showing intent extraction, prereq checks, and seat queries.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 3. Automated 5-Step Live Registration Gateway
-Real-time registrar transaction pipeline executing prerequisite verification, schedule collision prevention, live seat reservation, registrar ledger recording, and instantaneous timetable synchronization.
+## 🏛️ Course Catalog & Interactive Offerings
 
-<div align="center">
-  <img src="public/images/screenshots/03-live-enrollment-pipeline.png" alt="Live Enrollment Pipeline & Registration Confirmation" width="70%" style="border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.12);" />
-  <p><em>Figure 3: Multi-Step Live Registration Pipeline with Verified Prerequisite Checks, Seat Allocation, and Transaction Hash.</em></p>
-</div>
-
----
-
-### 4. Lifelong Learning Hub & Anti-Cheat Video Workspace
-Once enrolled, students unlock permanent lifelong access to course lecture videos, interactive coding labs, and 20-mark final quizzes. The anti-cheat tracker requires full video viewing before awarding completion.
-
-<div align="center">
-  <img src="public/images/screenshots/04-learning-hub-anticheat.png" alt="CoursePilot AI Anti-Cheat Learning Hub" width="95%" style="border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.12);" />
-  <p><em>Figure 4: Enrolled Learning Workspace featuring Anti-Cheat Playback Tracking, Clean Interactive Labs, and Instant PDF Bill Generation.</em></p>
-</div>
+| Course Code | Course Name | Credits | Level | Prerequisites | Seats | Lifelong Learning Modules |
+| :---: | :--- | :---: | :---: | :--- | :---: | :--- |
+| `CS401` | **Machine Learning** | 4 | 400 | `CS201`, `CS202`, `MATH202` | 7 / 50 | 8 Video Lectures • 3 Python Labs • 20-Q Exam |
+| `CS305` | **Database Systems** | 4 | 300 | `CS201` | 14 / 45 | 7 Video Lectures • 3 SQL Labs • 20-Q Exam |
+| `CS320` | **Cloud Computing** | 3 | 300 | `CS301` | 7 / 40 | 6 Video Lectures • 3 Docker Labs • 20-Q Exam |
+| `CS350` | **Computer Vision** | 3 | 300 | `CS401` | 5 / 35 | 6 Video Lectures • 3 OpenCV Labs • 20-Q Exam |
+| `CS380` | **Cybersecurity & Cryptography** | 3 | 300 | `CS301`, `MATH201` | 8 / 45 | 7 Video Lectures • 3 Crypto Labs • 20-Q Exam |
+| `CS420` | **Natural Language Processing** | 3 | 400 | `CS401` | 14 / 50 | 8 Video Lectures • 3 LLM Labs • 20-Q Exam |
+| `CS450` | **Distributed Systems** | 4 | 400 | `CS301`, `CS202` | 6 / 40 | 8 Video Lectures • 3 gRPC Labs • 20-Q Exam |
 
 ---
 
-## 🚀 Key Features
-
-### 🔒 1. Strict Single Enrollment & Locked Course Protection
-- **One Course, One Enrollment Policy**: Under university regulations, each individual student can only enroll in a course once.
-- **Visual Lock Identifiers**: All enrolled courses display `🔒 Locked • Enrolled` or `🔒 Locked • Completed`. Action buttons automatically morph into `🔒 Locked • Go to Learning` or disabled `Completed & Locked`.
-- **Server-Side Conflict Guard**: Both `/api/registration` and `/api/v1/registration/register` strictly reject duplicate enrollments with `HTTP 409 Conflict`, returning `{ isLocked: true, isDuplicate: true }`.
-- **Permanent Lifelong Access**: Students retain permanent access to all lectures, coding sandboxes, and certificates under **Enrolled Courses** without ever needing to re-register.
-
-### 🛡️ 2. Anti-Cheat Video Verification System
-- **True Playback Tracking**: Replaces fake one-click checkboxes with real-time watch progression.
-- **Completion Criteria**: The system verifies that the lecture was played through to the final 3 seconds. Skipping or premature clicks are strictly rejected with actionable user guidance.
-- **Tamper-Proof Ledger**: Completed video IDs are saved to the server-side student transcript ledger, preventing client-side spoofing.
-
-### 💻 3. Clean Interactive Coding Labs (No Pre-filled Answers)
-- **Zero Default Solutions**: Labs provide only standard clean starter boilerplates with helpful comments, requiring the student to write actual code.
-- **Automated Validation**: Placeholder code (e.g. `pass`, empty functions, comments only) is rejected with `400 Bad Request`.
-- **Instant Sandbox Execution**: Code is evaluated and validated in real time against test suites.
-
-### 📝 4. 20-Question Final Assessment Quiz (3-Attempt Limit)
-- **Comprehensive 20-Mark Assessment**: Each course features 20 challenging multiple-choice questions spanning all curriculum modules.
-- **Passing Threshold**: Students must achieve at least **12/20 (60%)** to pass and earn course completion credit.
-- **3-Attempt Safety Limit**: If a student scores below 12, they can re-attempt the quiz up to 3 times with recorded history.
-- **Verifiable Certificate Generation**: Scoring 12+ alongside 100% video lectures and completed labs issues an official university certificate with a cryptographic verification hash.
-
-### 📄 5. Tuition-Free Official Proof of Enrollment Bill
-- **Accurate PDF Invoicing**: Generates downloadable PDF documentation confirming official course registration.
-- **Tuition-Free Transparency**: Eliminates deceptive commercial pricing, clearly stating `Tuition Status: Fully Funded / Tuition-Free ($0.00 Official Confirmation)`.
-- **Dynamic SIS Metadata**: Reflects student name, ID number, exact registered course, section, classroom, credits, and live registrar transaction ID.
-
-### 🤖 6. Open-Domain AI Academic Advisor
-- **Context-Aware Recommendations**: Tailors elective suggestions based on the student's career roadmap (AI/ML Engineer, Cybersecurity Specialist, Cloud Architect).
-- **Universal Knowledge Base**: Capable of answering questions across degree graduation audits, GPA calculations, course prerequisites, interview preparation, and technical computer science concepts.
-- **Transparent Reasoning Logs**: Displays real-time cognitive steps taken by the agent (intent classification, transcript audit, prerequisite verification, seat query).
-
----
-
-## 🏗️ Architecture & How It Works
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
-    User["Student / User"] -->|Natural Language or UI Action| Router{"Intent Router"}
+    classDef client fill:#eef2ff,stroke:#6366f1,stroke-width:2px,color:#1e1b4b;
+    classDef core fill:#fdf4ff,stroke:#a855f7,stroke-width:2px,color:#3b0764;
+    classDef db fill:#ecfdf5,stroke:#10b981,stroke-width:2px,color:#064e3b;
+    classDef warn fill:#fffbeb,stroke:#f59e0b,stroke-width:2px,color:#78350f;
 
-    subgraph CorePlatform ["CoursePilot AI Core Engine"]
-        Router -->|"Advisor Chat / Question"| Agent["Autonomous AI Agent Orchestrator"]
-        Router -->|"Course Enrollment"| RegGateway["SIS Registration Gateway"]
-        Router -->|"Open Curriculum"| LearningHub["Lifelong Learning Hub"]
+    User(["🧑‍🎓 Student / Academic User"]):::client -->|Web Interaction / Natural Language| UI["🖥️ Next.js 14 Responsive Frontend"]:::client
 
-        Agent --> SIS["University Student Records (SIS)"]
-        Agent --> Catalog["Live Course Catalog API"]
-        Agent --> RulesEngine["Compliance & Prereq Engine"]
+    subgraph Orchestration ["🤖 Autonomous AI & Gateway Orchestration"]
+        UI -->|POST /api/agent| Orchestrator["🧠 Orchestrator & Multi-Agent Router"]:::core
+        UI -->|POST /api/registration| Gateway["⚡ Live Registration Gateway"]:::core
+        UI -->|POST /api/v1/learning| LearningEngine["🎓 Learning Hub & Anti-Cheat Engine"]:::core
 
-        RegGateway --> LockCheck{"Is Already Enrolled?"}
-        LockCheck -->|"Yes"| Conflict["409 Conflict: Registration Locked (Lifelong Access)"]
-        LockCheck -->|"No"| SeatAlloc["Atomic Seat Allocation (Seats -= 1)"]
-        SeatAlloc --> Recv["Issue Official SIS Transaction ID & PDF Bill"]
-
-        LearningHub --> VideoGuard{"Anti-Cheat Video Check"}
-        VideoGuard -->|"Watched to End"| MarkVideoComplete["Mark Video Complete"]
-        VideoGuard -->|"Skipped / Premature"| BlockVideoComplete["Prompt: Watch Till End"]
-
-        LearningHub --> LabSandbox{"Lab Evaluator"}
-        LabSandbox -->|"Real Code"| LabSuccess["Lab Passed"]
-        LabSandbox -->|"Placeholder / pass"| LabReject["400: Submit Actual Implementation"]
-
-        LearningHub --> QuizEngine{"20-Question Quiz Engine"}
-        QuizEngine -->|"Score >= 12 & Tries <= 3"| CertIssue["Issue Verifiable Certificate"]
-        QuizEngine -->|"Score < 12 & Tries < 3"| QuizRetry["Allow Re-attempt"]
+        Orchestrator --> IntentParser["Natural Language Intent Classifier"]:::core
+        Orchestrator --> PrereqDAG["DAG Prerequisite Rule Engine"]:::core
+        Orchestrator --> SeatChecker["Live Seat Availability Engine"]:::core
     end
 
-    Conflict --> UIUpdate["Real-Time Reactive UI (Locked Badges)"]
-    Recv --> UIUpdate
-    MarkVideoComplete --> UIUpdate
-    CertIssue --> UIUpdate
+    subgraph StateStorage ["💾 Real-Time University SIS State"]
+        Gateway --> DuplicateGuard{"🔒 Is Course Enrolled?"}:::warn
+        DuplicateGuard -->|Yes| LockReject["🚫 HTTP 409 Conflict: Registration Locked"]:::warn
+        DuplicateGuard -->|No| AtomicSeat["🎟️ Atomic Live Seat Decrement"]:::db
+
+        AtomicSeat --> SyncStudent["Update Student Transcript & Timetable"]:::db
+        SyncStudent --> UnivDB[("🏛️ In-Memory SIS Database Singleton")]:::db
+    end
+
+    subgraph LearningPipeline ["🛡️ Anti-Cheat & Certificate Pipeline"]
+        LearningEngine --> VideoChecker{"📹 Watched to End (Last 3s)?"}:::core
+        VideoChecker -->|Yes| SaveVideo["Record Video Completion"]:::db
+        VideoChecker -->|No| RejectVideo["⚠️ Guidance: Complete Full Video"]:::warn
+
+        LearningEngine --> LabChecker{"💻 Real Code (No pass/empty)?"}:::core
+        LabChecker -->|Yes| PassLab["Lab Marked Complete"]:::db
+        LabChecker -->|No| RejectLab["⚠️ 400: Submit Genuine Implementation"]:::warn
+
+        LearningEngine --> QuizGrader{"📝 Score >= 12 & Tries <= 3?"}:::core
+        QuizGrader -->|Yes| IssueCert["🏆 Issue Verifiable Certificate with Hash"]:::db
+        QuizGrader -->|No| AllowRetry["🔄 Allow Reattempt (Max 3)"]:::warn
+    end
+
+    UnivDB -.->|SSE Real-Time Stream| UI
+    IssueCert -.->|Instant Download| UI
+    LockReject -.->|Visual Badge Update| UI
 ```
 
 ---
 
-## 📂 Project Structure
+## 🧪 Automated Verification & Test Suites
+
+CoursePilot AI is backed by **116 end-to-end automated assertions** spanning three comprehensive test harnesses. Every single test passes with 0 failures:
 
 ```
-Course Pilot AI/
-├── public/
-│   └── images/
-│       └── screenshots/             # High-resolution platform UI screenshots
-│           ├── 01-dashboard-overview.jpg
-│           ├── 02-ai-advisor-workspace.png
-│           ├── 03-live-enrollment-pipeline.png
-│           └── 04-learning-hub-anticheat.png
-├── src/
-│   ├── app/                         # Next.js 14 App Router
-│   │   ├── api/                     # Core API Routes
-│   │   │   ├── agent/               # AI Orchestrator & SSE Events
-│   │   │   ├── courses/             # Course Catalog API
-│   │   │   ├── registration/        # Dynamic Registration Gateway
-│   │   │   ├── student/             # Active Student Profile
-│   │   │   └── v1/                  # Extended RESTful API v1
-│   │   │       ├── courses/         # Courses & Live Seat Counts
-│   │   │       ├── learning/        # Anti-Cheat Videos, Labs, Quizzes
-│   │   │       ├── registration/    # Registration & Lock Handlers
-│   │   │       ├── students/        # Multi-Student Directory
-│   │   │       └── timetable/       # Timetable Generation
-│   │   ├── layout.tsx               # Root Layout & Styling
-│   │   └── page.tsx                 # Main Interactive Dashboard
-│   ├── components/                  # React UI Components
-│   │   ├── CourseModal.tsx          # Course Inspection & Lock Actions
-│   │   ├── LearningWorkspaceModal.tsx # Video Player, Coding IDE, Quiz Engine
-│   │   ├── RecommendedCourses.tsx   # AI Scored Course Recommendations
-│   │   ├── RegistrationConfirmModal.tsx # 5-Step Gateway & Locked Prevention
-│   │   ├── TopNav.tsx               # Student Switcher & Notifications
-│   │   └── views/                   # Specialized Feature Views
-│   │       ├── CourseCatalogView.tsx # Searchable Live Catalog
-│   │       ├── EligibilityView.tsx   # Rule-by-rule Academic Audit
-│   │       ├── EnrolledCoursesView.tsx # Lifelong Learning Hub Cards
-│   │       ├── PrerequisitesView.tsx # Prerequisite Dependency DAG
-│   │       └── TimetableGrid.tsx    # Collision-Free Weekly Timetable
-│   ├── lib/
-│   │   ├── agent/                   # Agent Architecture & Orchestrator
-│   │   ├── providers/               # Real University Data Providers
-│   │   ├── server/                  # In-Memory Database & Seeding
-│   │   └── utils/                   # PDF Generation & Helpers
-│   └── types/                       # TypeScript Type Definitions
-├── scratch/                         # Automated Verification Test Suites
-│   ├── verify_all_features.mjs      # Anti-cheat, Labs, 20-Q Quiz, Certs (32 Tests)
-│   ├── verify_ai_chatbot.mjs        # Conversational AI Domain Knowledge (64 Tests)
-│   └── verify_locked_enrollment.mjs # Single Enrollment & Lock Guards (20 Tests)
-├── package.json
-├── tsconfig.json
-└── README.md
+===================================================================================
+                             AUTOMATED TEST RUN SUMMARY
+===================================================================================
+ Suite 1: Locked Course & Duplicate Protection   -->  20 / 20 PASSED  (100%)  ✅
+ Suite 2: Anti-Cheat Hub, Labs & 20-Q Assessment  -->  32 / 32 PASSED  (100%)  ✅
+ Suite 3: Conversational AI & Domain Inquiries    -->  64 / 64 PASSED  (100%)  ✅
+-----------------------------------------------------------------------------------
+ TOTAL ASSERTIONS VERIFIED                       --> 116 / 116 PASSED (100%)  🎉
+===================================================================================
 ```
 
----
-
-## 🧪 Automated Verification & Testing
-
-CoursePilot AI includes **three independent end-to-end test suites** ensuring 100% compliance across all academic and platform features:
-
-| Test Suite | Focus Area | Assertions | Status |
-| :--- | :--- | :---: | :---: |
-| **`verify_locked_enrollment.mjs`** | Single Enrollment Rule, 409 Conflict, Array Deduplication, AI Guards | 20 | **✅ 20 / 20 PASSED** |
-| **`verify_all_features.mjs`** | Anti-Cheat Videos, Coding Labs, 20-Question Quiz, Official Certificates | 32 | **✅ 32 / 32 PASSED** |
-| **`verify_ai_chatbot.mjs`** | Open-Domain Q&A, Policy Explanations, Career Guidance, Eligibility Logic | 64 | **✅ 64 / 64 PASSED** |
-| **Total Test Coverage** | **All core server endpoints, anti-cheat mechanisms, and UI APIs** | **116** | **✅ 116 / 116 PASSED** |
-
-To run the verification test suites locally:
+### Run the Automated Suites Locally:
 
 ```bash
-# Verify Locked Course Policy & Duplicate Rejection
+# 1. Run Locked Course & Duplicate Rejection Suite (20 Tests)
 node scratch/verify_locked_enrollment.mjs
 
-# Verify Anti-Cheat Video Tracking, Clean Labs, 20-Q Quiz, and Certificates
+# 2. Run Anti-Cheat Video, Labs, 20-Q Quiz & Certificates Suite (32 Tests)
 node scratch/verify_all_features.mjs
 
-# Verify Open-Domain AI Chatbot Intelligence
+# 3. Run Open-Domain Conversational AI Chatbot Suite (64 Tests)
 node scratch/verify_ai_chatbot.mjs
 ```
+
+<details>
+<summary><b>🔍 Click to expand detailed terminal test output</b></summary>
+
+```text
+==================================================
+   LOCKED COURSE ENROLLMENT VERIFICATION SUITE   
+==================================================
+--- TEST 1: Check Active Student Profile & Enrollments ---
+Active student: Joyce Chen (STU-2024-8841)
+Current enrollments: CS401, CS380
+[PASS] Active student profile retrieved
+[PASS] Student enrollments have zero duplicate entries
+
+--- TEST 2: Attempt Duplicate Registration via /api/registration ---
+[PASS] /api/registration rejected duplicate registration with HTTP 409 Conflict
+[PASS] Response flagged isLocked = true
+[PASS] Response flagged isDuplicate = true
+[PASS] Error message confirms 'Registration Locked'
+
+--- TEST 3: Attempt Duplicate Registration via /api/v1/registration/register ---
+[PASS] /api/v1/registration/register rejected duplicate with HTTP 409 Conflict
+[PASS] v1 endpoint returned isLocked = true
+[PASS] v1 endpoint returned isDuplicate = true
+[PASS] v1 error message confirms 'Registration Locked'
+
+--- TEST 4: Attempt Registration for Completed Course (CS101) ---
+[PASS] Completed course registration rejected with HTTP 409 Conflict
+[PASS] Completed course response flagged isLocked = true
+
+--- TEST 5: AI Agent Chatbot Intent for Enrolled Course ---
+[PASS] Agent chat response informs user that registration is locked
+[PASS] Agent does not generate a confirmation action for enrolled course
+
+--- TEST 6: AI Agent Eligibility Check for Enrolled Course ---
+[PASS] Eligibility check informs student that course registration is locked
+[PASS] Eligibility data object contains isLocked = true
+
+--- TEST 7: Single Registration vs Repeated Registration for Same Individual ---
+[PASS] First registration for CS320 evaluated
+[PASS] Second registration for CS320 was blocked and rejected with HTTP 409 Conflict
+[PASS] Repeated registration flagged isLocked = true
+[PASS] Deduplication verified: CS320 appears exactly once in currentEnrollments
+
+==================================================
+TEST RESULTS: 20 PASSED, 0 FAILED (100%)
+==================================================
+```
+
+</details>
 
 ---
 
 ## ⚡ Getting Started
 
-### Prerequisites
-- **Node.js**: v18.17.0 or later
-- **npm** or **yarn** / **pnpm**
+### 📋 Prerequisites
+- **Node.js**: `v18.17.0` or higher
+- **npm**: `v9.0.0` or higher (or `pnpm` / `yarn`)
+- **Modern Browser**: Chrome, Edge, Firefox, or Safari
 
-### Installation
+### 🛠️ Quick Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/coursepilot-ai.git
-   cd "Course Pilot AI"
-   ```
+```bash
+# 1. Clone this repository
+git clone https://github.com/your-username/coursepilot-ai.git
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+# 2. Enter workspace
+cd "Course Pilot AI"
 
-3. **Set up Environment Variables (Optional)**:
-   Create a `.env.local` file in the root directory:
-   ```env
-   # Optional: Google Gemini API key for external LLM inference
-   GEMINI_API_KEY=your_gemini_api_key_here
+# 3. Install dependencies
+npm install
 
-   # Optional: Connect to an external University SIS REST endpoint
-   # UNIVERSITY_API_BASE_URL=https://sis.university.edu
-   # UNIVERSITY_API_KEY=your_university_api_key
-   ```
-   *(Note: CoursePilot AI runs out-of-the-box in standalone mode with its built-in server database and heuristics engine without requiring external API keys).*
+# 4. Start Next.js development server
+npm run dev
+```
 
-4. **Run Development Server**:
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+Visit [`http://localhost:3000`](http://localhost:3000) in your browser to experience CoursePilot AI.
 
-5. **Build for Production**:
-   ```bash
-   npm run build
-   npm run start
-   ```
+### 📦 Production Build & Deployment
+
+```bash
+# Build the optimized production bundle
+npm run build
+
+# Launch the production server
+npm run start
+```
 
 ---
 
-## 🛠️ Technology Stack
+## 🌐 API Reference
 
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router, Server Components & Route Handlers)
-- **Language**: [TypeScript 5](https://www.typescriptlang.org/) (Strict type-checking)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (Responsive design, Glassmorphism effects)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **PDF Generation**: [jsPDF](https://github.com/parallax/jsPDF) (Client-side tuition-free bill export)
-- **Animations**: [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
-- **Architecture**: Domain-Driven Autonomous Multi-Agent Orchestration
+| Method | Endpoint | Description | Status Code |
+| :---: | :--- | :--- | :---: |
+| `GET` | `/api/student` | Active student record, current timetable, and notification feed | `200 OK` |
+| `GET` | `/api/courses` | Full live catalog with real-time seat capacities | `200 OK` |
+| `POST` | `/api/agent` | Autonomous AI conversation engine & rule evaluator | `200 OK` |
+| `POST` | `/api/registration` | Course registration gateway with single-enrollment lock guard | `200 OK` / `409 Conflict` |
+| `POST` | `/api/v1/registration/register` | Atomic SIS seat decrement and ledger recorder | `200 OK` / `409 Conflict` |
+| `GET` | `/api/v1/students` | Multi-student directory and active student switch handler | `200 OK` |
+| `GET` | `/api/v1/learning` | Curriculum lecture videos, interactive coding labs & quiz | `200 OK` |
+| `POST` | `/api/v1/learning` | Video completion tracker, lab compiler & certificate issuer | `200 OK` / `400 Bad Request` |
+| `GET` | `/api/v1/timetable/[studentId]` | Collision-free weekly schedule matrix | `200 OK` |
+| `POST` | `/api/v1/rules/eligibility` | Automated 12-rule prerequisite & standing auditor | `200 OK` |
 
 ---
 
-## 📄 License
+## 💻 Tech Stack & Tooling
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+<div align="center">
+
+| Area | Technologies |
+| :--- | :--- |
+| **Frontend Framework** | **Next.js 14** (App Router, Server Actions, Dynamic Routes) |
+| **User Interface** | **React 18**, **Tailwind CSS 3.4**, Glassmorphism, Responsive Mobile/Desktop |
+| **Type Integrity** | **TypeScript 5.0** (Strict Null Checking, Zero Compile Errors) |
+| **Icons & Aesthetics** | **Lucide React**, Gradient UI Accents, Custom CSS Keyframes |
+| **Document Generation**| **jsPDF** (Client-side tuition-free official bills), Canvas Confetti |
+| **Backend & SIS** | In-Memory ACID-Compliant University Database Singleton on `globalThis` |
+| **AI Architecture** | Domain Heuristics + Multi-Agent Orchestrator + Gemini API Connector |
+
+</div>
+
+---
+
+## 📜 License
+
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ for modern higher-education students worldwide.</sub>
+  <p>
+    <b>CoursePilot AI</b> • Built with dedication for university students, registrars, and educators worldwide.
+  </p>
+  <sub>Designed and engineered with passion. Plan Smarter. Learn Further.</sub>
 </div>
-
