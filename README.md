@@ -356,6 +356,7 @@ npm run dev
 ```
 
 Visit [`http://localhost:3000`](http://localhost:3000) in your browser to experience CoursePilot AI.
+For viewing the Frontend Alone Visit (https://rufinajoyce25-dotcom.github.io/Course-Pilot-AI/)
 
 ### 📦 Production Build & Deployment
 
